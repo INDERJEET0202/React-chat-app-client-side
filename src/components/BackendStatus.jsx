@@ -5,7 +5,7 @@ function BackendStatus() {
 
     useEffect(() => {
         const local_func = async () => {
-            const response = await fetch("react-chat-app-server-gray.vercel.app");
+            const response = await fetch("https://chat-app-backend-snowy.vercel.app");
             if (response.status === 200) {
                 setIsBackendUp(true);
             }
